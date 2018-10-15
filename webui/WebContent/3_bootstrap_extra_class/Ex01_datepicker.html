@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" /><!-- 언어 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- 인터넷익스플로러 사양 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- 모바일 -->
+<title>Datepicker</title>
+	<!-- 부트스트랩 css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- [추가]  제이쿼리 ui css  -->
+	<link rel="stylesheet" type="text/css"  href="http://code.jquery.com/ui/1.10.0/themes/ui-lightness/jquery-ui.css" />	
+	
+	<!--  ***** 스타일 코드 구현 *****  -->
+	<style type="text/css">
+	
+	</style>
+	
+	<!-- 제이쿼리(부트슽트랩 이전에 제이쿼리를 먼저 기술 아니면 에러 발생) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- [추가] -->
+	<script type="text/javascript"   src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+	<!-- 부트스트랩 js -->
+	<script src="js/bootstrap.min.js"></script>
+	
+	<!-- ***** 스크립트 코드 구현 *****  -->
+	<script type="text/javascript">
+	$(function(){
+// 		$.datepicker.setDefaults($.datepicker.regional['ko']);
+		$('#datepicker').datepicker({
+			showOn:'button',
+			buttonImage:'./images/datepicker/calendar.gif'
+	});
+
+		});
+
+	</script>
+</head>
+<body>
+
+<label for="date">날짜:</label>
+<input id="datepicker" type="text">
+
+	
+</body>
+</html>

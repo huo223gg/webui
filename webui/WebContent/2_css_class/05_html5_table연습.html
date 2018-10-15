@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 테이블 꾸미기 연습 </title>
+<style type="text/css">
+table{
+margine:15px;
+border:2px solid black;
+border-collapse:collapse;
+}
+td,th{border:1px solid gray;}
+th{height:50px;}
+td{height:50px;width:100px; padding:15px; text-align:center; background-color:skyblue;}
+th{background-color:green;}
+h2{padding:30px;}
+
+tr:nth-child(1){color:red;}
+tr:nth-child(2){color:black;}
+tr:nth-child(3){color:green;}
+tr:nth-child(4){color:blue;}
+tr:nth-child(5){color:purple;}
+tr:nth-child(6){color:gray;}
+
+th{color:black;}
+
+
+#ho:nth-child(odd):hover{background-color:pink;}
+#ho:nth-child(even):hover{background-color:gray;}
+</style>
+</head>
+<body>
+
+<div id="celebs">
+        <h2 class="heading"> 우리 스타 보기</h2>
+        <table class="data">
+          <thead>
+            <tr id='ho'>
+              <th>ID</th>
+              <th>이름</th>
+              <th>직업</th>
+              <th>거주지</th>             
+            </tr>
+          </thead>
+          <tbody>
+            <tr id='ho'>
+              <td>203A</td>
+              <td>샤이니</td>
+              <td>가수</td>
+              <td>용인</td>
+            </tr>
+            <tr id='ho'>
+              <td>141B</td>
+              <td>소녀시대</td>
+              <td>가수</td>
+              <td>부산</td>
+            </tr>
+            <tr id='ho'>
+              <td>2031</td>
+              <td>김수현</td>
+              <td>배우</td>
+              <td>뉴욕</td>
+            </tr>
+            <tr id='ho'>
+              <td>007F</td>
+              <td>국카스텐</td>
+              <td>가수</td>
+              <td>마산</td>
+            </tr>
+            <tr id='ho'>
+              <td>8A05</td>
+              <td>김태희</td>
+              <td>배우</td>
+              <td>서울</td>
+            </tr>
+            <tr id='ho'>
+              <td>6636</td>
+              <td>송혜교</td>
+              <td>배우</td>
+              <td>런던</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+</body>
+</html>

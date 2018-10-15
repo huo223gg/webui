@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼예제</title>
+	<!-- css 적용 -->
+	<link href='css/myform.css' type='text/css' rel='stylesheet'>
+</head>
+<body>
+
+	<form method='get' action='/web/b.jsp'>
+		<fieldset>
+			<legend>로그인 정보</legend>
+			<ol>
+				<li><label for='didjf'>*이름</label><input type='text' name='id'
+					id='didjf' placeholder='한글만 입력' required pattern='[ㄱ-힣]+'></li>
+				<li><label for='pk'></label>패스워드<input type='password'
+					name='pw' id='pw'></li>
+				<li><label for='dk'>비밀번호 확인</label><input type='password'
+						name='pw' id='dk'></li>
+					<li><label for='gr'>회원 등급</label><input type='text'
+					name='grade' id='gr' value='준회원' readonly></li>
+			</ol>
+			</fieldset>
+			<fieldset>
+			<legend>개인정보</legend>
+			<ol>
+				<li><label for='name'>이름</label>
+					<input type='text' name='name' id='name'
+					placeholder='5자미만 공백없이' required pattern='[ㄱ-힣]+'> </li>
+				<li><label for='mail'>메일 주소</label>
+					<input type='email' name='mail' id='mail'
+					placeholder='***@****.com' required pattern='[a-z]+[a-z0-9]*\.?[a-z0-9]*@[a-z0-9]+\.[a-z0-9]*/i'>					
+					</li>
+				<li><label for='tel'>연락처</label>
+					<input type='tel' name='tel' id='tel'
+					placeholder='010-****-****' required pattern='[0-9]+'></li>
+				<li><label for ='birth'>생일</label>
+				    <input type='date' name='birth' id='birth' 
+				    placeholder='연도-월-일' required pattern=''></li>
+			</ol>
+		</fieldset>
+		<fieldset>
+		<legend>코딩 숙련도(상,중,하)</legend>
+			<ol>
+				<li><label for='skill'></label>
+				<input type='range' name='skill' id='skill'>
+				</li>
+			</ol>
+		</fieldset>
+		<fieldset>
+		<input type='submit' value='제출'>
+		</fieldset>
+	</form>
+
+</body>
+
+</html>
